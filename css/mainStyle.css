@@ -1,0 +1,36 @@
+/* Basic */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  box-sizing: inherit;
+}
+
+/* Typography */
+
+/* Buttons */
+
+/* main */
+
+/* JavaScript  Classes*/
+
+/* Footer */
+.attribution {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
