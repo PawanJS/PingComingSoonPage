@@ -20,16 +20,21 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <figure class="logo-box">
-      <img src="images/logo.svg" alt="logo" class="logo" />
-    </figure>
     <header class="header">
-      <h1 class="heading-1">We are launching soon!</h1>
-      <p class="paragraph">Subscribe and get notified</p>
-      <form class="form js-form">
+      <figure class="logo-box">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+      </figure>
+      <h1 class="heading-1 mt-lg">We are launching <span>soon!</span></h1>
+      <p class="paragraph mt-sm">Subscribe and get notified</p>
+      <form class="form js-form mt-md">
         <label for="email"></label>
-        <input type="email" name="email" id="email" />
-        <button class="btn btn-submit js-btn">Notify Me</button>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="your email address"
+        />
+        <button class="btn js-btn">Notify Me</button>
       </form>
     </header>
     <main class="main">
@@ -40,24 +45,24 @@
           class="main-img"
         />
       </figure>
-      <div class="socials-container">
+      <div class="socials-container mt-lg">
         <a href="#" class="social--link">
           <svg class="social--icon">
-            <use xlink:href="images/sprite.svg#"></use>
+            <use xlink:href="images/sprite.svg#facebook"></use>
           </svg>
         </a>
         <a href="#" class="social--link">
           <svg class="social--icon">
-            <use xlink:href="images/sprite.svg#"></use>
+            <use xlink:href="images/sprite.svg#twitter"></use>
           </svg>
         </a>
         <a href="#" class="social--link">
           <svg class="social--icon">
-            <use xlink:href="images/sprite.svg#"></use>
+            <use xlink:href="images/sprite.svg#instagram"></use>
           </svg>
         </a>
-        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
       </div>
+      <p class="copyright mt-sm">&copy; Copyright Ping. All rights reserved.</p>
     </main>
     <footer>
       <p class="attribution">

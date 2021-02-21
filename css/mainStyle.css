@@ -14,15 +14,152 @@ html {
 body {
   font-family: "Libre Franklin", sans-serif;
   box-sizing: inherit;
+  display: grid;
+  place-items: end center;
+  grid-row-gap: 2rem;
+  min-height: 100vh;
+  padding: 5rem;
 }
 
 /* Typography */
+.heading-1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.heading-1 span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+
+.paragraph {
+  color: hsl(209, 33%, 12%);
+  font-size: 1.8rem;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 59%);
+}
 
 /* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 3rem;
+  background: hsl(223, 87%, 63%);
+  font-size: 1.5rem;
+  padding: 1.5rem 5rem;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0.1rem 1.5rem hsl(223, 87%, 63%);
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: hsl(228, 45%, 44%);
+}
+
+/* Utility classes */
+.mt-sm {
+  margin-top: 1.3rem;
+}
+
+.mt-md {
+  margin-top: 2.3rem;
+}
+
+.mt-lg {
+  margin-top: 3rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@supports not (gap: 3rem) {
+  .form input {
+    margin-right: 2rem;
+  }
+}
+
+.form input {
+  box-sizing: border-box;
+  border: 0.5px solid hsla(0, 0%, 59%, 0.472);
+  padding: 1.3rem 3rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.form input:focus,
+btn:focus {
+  outline: none;
+}
 
 /* main */
+.main {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
 
-/* JavaScript  Classes*/
+.main-img-box {
+  max-width: 70rem;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.socials-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@supports not (gap: 3rem) {
+  .social--link {
+    margin-right: 2rem;
+  }
+}
+
+.social--link {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  border: 0.5px solid hsla(0, 0%, 59%, 0.472);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.social--link:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+
+.social--link:hover .social--icon {
+  fill: #fff;
+}
+
+.social--icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: hsl(223, 87%, 63%);
+  transition: fill 0.2s;
+}
 
 /* Footer */
 .attribution {
@@ -31,6 +168,37 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: color 0.2s;
 }
 
+.attribution a:hover {
+  color: hsl(354, 100%, 66%);
+}
+
+/* Screen reader only */
+.scr-only {
+  position: absolute;
+  left: -1000000px;
+  width: 1px;
+  height: 1px;
+}
+
+/* JavaScript  Classes*/
+
 /* Media queries */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 32em) {
+  .form {
+    flex-direction: column;
+  }
+
+  .btn,
+  .form input {
+    width: 100%;
+  }
+}
