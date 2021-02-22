@@ -16,7 +16,7 @@ body {
   box-sizing: inherit;
   display: grid;
   place-items: end center;
-  grid-row-gap: 2rem;
+  grid-row-gap: 3rem;
   min-height: 100vh;
   padding: 5rem;
 }
@@ -80,6 +80,7 @@ body {
 }
 
 .form {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -104,6 +105,14 @@ body {
 .form input:focus,
 btn:focus {
   outline: none;
+}
+
+.error-msg {
+  font-weight: 600;
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: -3.5rem;
+  left: 3rem;
 }
 
 /* main */
@@ -184,6 +193,9 @@ btn:focus {
 }
 
 /* JavaScript  Classes*/
+.error input {
+  border-color: hsl(354, 100%, 66%);
+}
 
 /* Media queries */
 @media only screen and (max-width: 75em) {
