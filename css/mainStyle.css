@@ -83,8 +83,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 2.5rem;
-}
+  }
 
 .form input {
   box-sizing: border-box;
@@ -94,17 +93,12 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   font-family: inherit;
+  margin-right: 2.5rem;
  }
 
 .form input:focus,
 btn:focus {
   outline: none;
-}
-
-@supports not (gap: 3rem) {
-  .form #email {
-    margin-right: 2rem;
-   }
 }
 
 .error-msg {
@@ -211,6 +205,11 @@ btn:focus {
   
   .form {
     flex-direction: column;
+  }
+  
+  .form input{
+   margin-right: 0;
+    margin-bottom: 2.5rem;
   }
   
   .btn,
