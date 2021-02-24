@@ -86,13 +86,6 @@ body {
   gap: 2rem;
 }
 
-@supports not (gap: 3rem) {
-  .form input {
-    margin-right: 2rem;
-    margin-bottom:2.5rem;
-  }
-}
-
 .form input {
   box-sizing: border-box;
   border: 0.5px solid hsla(0, 0%, 59%, 0.472);
@@ -106,6 +99,13 @@ body {
 .form input:focus,
 btn:focus {
   outline: none;
+}
+
+@supports not (gap: 3rem) {
+  .form input {
+    margin-right: 2rem;
+    margin-bottom:2.5rem;
+  }
 }
 
 .error-msg {
