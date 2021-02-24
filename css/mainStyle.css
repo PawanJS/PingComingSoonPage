@@ -89,6 +89,7 @@ body {
 @supports not (gap: 3rem) {
   .form input {
     margin-right: 2rem;
+    margin-bottom:2.5rem;
   }
 }
 
@@ -213,14 +214,6 @@ btn:focus {
     flex-direction: column;
   }
   
-  
-@supports not (gap: 3rem) {
-  .form input {
-    margin-right: 0;
-    margin-bottom: 2.5rem;
-  }
-}
-
   .btn,
   .form input {
     width: 100%;
