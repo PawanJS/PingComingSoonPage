@@ -16,7 +16,7 @@ body {
   box-sizing: inherit;
   display: grid;
   place-items: end center;
-  grid-row-gap: 3rem;
+  grid-row-gap: 6rem;
   min-height: 100vh;
   padding: 5rem;
 }
@@ -205,6 +205,10 @@ btn:focus {
 }
 
 @media only screen and (max-width: 32em) {
+  body{
+   grid-row-gap:4rem; 
+  }
+  
   .form {
     flex-direction: column;
   }
