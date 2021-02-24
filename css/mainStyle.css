@@ -94,6 +94,8 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   font-family: inherit;
+  margin-right: 2rem;
+  margin-bottom:2.5rem;
 }
 
 .form input:focus,
