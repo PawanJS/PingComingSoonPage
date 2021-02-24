@@ -101,7 +101,7 @@ btn:focus {
   outline: none;
 }
 
-@supports not (gap: 3rem) {
+@supports  (gap: 3rem) {
   .form input {
     margin-right: 2rem;
     margin-bottom:2.5rem;
