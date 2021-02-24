@@ -101,11 +101,10 @@ btn:focus {
   outline: none;
 }
 
-@supports  (gap: 3rem) {
+@supports not (gap: 3rem) {
   .form input {
     margin-right: 2rem;
-    margin-bottom:2.5rem;
-  }
+   }
 }
 
 .error-msg {
