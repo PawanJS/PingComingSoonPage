@@ -208,6 +208,14 @@ btn:focus {
   .form {
     flex-direction: column;
   }
+  
+  
+@supports not (gap: 3rem) {
+  .form input {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+}
 
   .btn,
   .form input {
