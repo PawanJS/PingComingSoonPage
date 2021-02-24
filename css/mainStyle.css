@@ -83,7 +83,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .form input {
@@ -94,9 +94,7 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   font-family: inherit;
-  margin-right: 2rem;
-  margin-bottom:2.5rem;
-}
+ }
 
 .form input:focus,
 btn:focus {
